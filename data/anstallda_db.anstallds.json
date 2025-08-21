@@ -1,0 +1,86 @@
+[{
+  "_id": {
+    "$oid": "679f95b9868fe8c66613a975"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "679f98c9868fe8c66613a979"
+  },
+  "__v": 0
+},
+{
+  "_id": "67288b2c949c352675d6c235",
+  "Anstallda_ID": 23,
+  "Fullt namn": "Abdi Qadar",
+  "Efternamn": "ABDI",
+  "Fornamn": "QADAR",
+  "Personnummer": "19630427-4357",
+  "Roll": "Lokförare",
+  "Chef": "Olsson Henrik",
+  "Layout": "Stockholmståg",
+  "Foretag": "",
+  "Reff_Pnr": "19760203-2976",
+  "Tjanstekort": {
+    "Tjanstekort_ID": 23,
+    "Datum": 45517,
+    "EM_kod": 66010244,
+    "Mifare_kod": "3494657642",
+    "Alliera_Bla": "0115d0df84",
+    "Alliera_Gron": "d04c3e6a",
+    "RCO": 332415978
+  }
+},
+{
+  "_id": "67288b2c949c352675d6c5e7",
+  "Anstallda_ID": 969,
+  "Fullt namn": "Karim Kader Arkan",
+  "Efternamn": "KARIM",
+  "Fornamn": "KADER",
+  "Personnummer": "19821124-1370",
+  "Roll": "Lokalvårdare",
+  "Chef": "Salota Shamil (LU301R)",
+  "Layout": "Stockholmståg",
+  "Foretag": "",
+  "Reff_Pnr": "19821124-1370",
+  "Tjanstekort": {
+    "Tjanstekort_ID": 969,
+    "Datum": 45526,
+    "EM_kod": 66014953,
+    "Mifare_kod": {
+      "$numberLong": "3494598362"
+    },
+    "Alliera_Bla": "0115d0f1e9",
+    "Alliera_Gron": "d04b56da",
+    "RCO": 332322234
+  }
+},
+{
+  "_id": "67288b2c949c352675d6c658",
+  "Anstallda_ID": 1082,
+  "Fullt namn": "Lehtiniemi Kai",
+  "Efternamn": "LEHTINIEMI",
+  "Fornamn": "KAI",
+  "Personnummer": "19680223-9357",
+  "Roll": "Lokalvårdare",
+  "Chef": "Mortezaei Nasir (KP039V)",
+  "Layout": "Stockholmståg",
+  "Foretag": "",
+  "Reff_Pnr": "19680223-9357",
+  "Tjanstekort": {
+    "Tjanstekort_ID": 1082,
+    "Datum": 45442,
+    "EM_kod": "65949022",
+    "Mifare_kod": "3494580250",
+    "Alliera_Bla": "0115cff05e",
+    "Alliera_Gron": "d04b101a",
+    "RCO": "332304122"
+  }
+},
+{
+  "_id": {
+    "$oid": "679fb02a85978010d48492a7"
+  },
+  "__v": 0
+}]

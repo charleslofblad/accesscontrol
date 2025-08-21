@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Läs från Excel-fil och konvertera till XML</title>
+</head>
+<body>
+    <!-- Formulär för att ladda upp en Excel-fil och konvertera den till XML -->
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".xlsx, .xls">
+        <button type="submit">Läs Excel fil</button>
+    </form>
+
+    <!-- Formulär för att ladda upp en XML-fil och konvertera den till Excel -->
+    <form action="/upload-xml" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".xml">
+        <button type="submit">Läs XML fil</button>
+    </form>
+</body>
+</html>
