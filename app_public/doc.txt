@@ -1,0 +1,28 @@
+
+
+PS C:\node_dev\accesscontrol\app_public> cd C:\node_dev\
+PS C:\node_dev\accesscontrol\app_public> cd accesscontrol
+PS C:\node_dev\accesscontrol\app_public> cd app_public
+PS C:\node_dev\accesscontrol\app_public> npm install
+PS C:\node_dev\accesscontrol\app_public> ng serve --open
+
+
+
+
+
+Face-api.js fungerar bäst med TensorFlow.js v3.18.0
+
+npm uninstall @tensorflow/tfjs face-api.js
+npm install @tensorflow/tfjs@3.18.0 face-api.js@latest
+
+Face-api.js senaste version (v0.22.2) fungerar ofta med TFJS 3.x. 
+Men om du fortfarande får fel, testa att köra:
+
+npm install face-api.js@0.22.0
+
+npm install @tensorflow/tfjs@4.16.0 face-api.js@latest
+
+
+första installationen
+PS C:\node_dev\accesscontrol\app_public> npm install --save @tensorflow/tfjs-core
+PS C:\node_dev\accesscontrol\app_public> npm install --save face-api.js

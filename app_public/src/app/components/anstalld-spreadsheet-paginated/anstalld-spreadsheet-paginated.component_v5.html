@@ -1,0 +1,28 @@
+
+<input type="text" id="searchField" (input)="searchTable($event)" placeholder="Sök..." />
+<button (click)="laggTillNyAnstalld()">➕ Lägg till ny anställd</button>
+
+<!-- 🆕 Paginering denna div är ny "pagination-controls" -->
+<div class="pagination-controls">
+    <button (click)="tillbaka()" [disabled]="skip === 0">⬅️ Föregående</button>
+    <button (click)="naxta()">➡️ Nästa</button>    
+</div>
+
+
+
+<div #handsontableContainer class="handsontable-container"></div>
+
+
+
+
+
+<!--
+<input type="text" id="searchField" (input)="searchTable($event)" placeholder="Sök...">
+<button (click)="laggTillNyAnstalld()">➕ Lägg till ny anställd</button>
+
+<button (click)="forraSida()" [disabled]="skip === 0">⬅️ Föregående (Sida {{ currentPage - 1 }})</button>
+<button (click)="naxtaSida()" [disabled]="skip + limit >= totalAnstallda">Nästa (Sida {{ currentPage + 1 }}) ➡️</button>
+
+<p>Visar {{ skip + 1 }} - {{ skip + anstallda.length }} av {{ totalAnstallda }} anställda</p>
+
+<div #handsontableContainer class="handsontable-container"></div>-->

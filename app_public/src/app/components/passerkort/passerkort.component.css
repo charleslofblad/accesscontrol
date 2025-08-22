@@ -1,0 +1,123 @@
+/* Canvas-behållare för att rama in och centrera canvas */
+.canvas-container {
+    position: relative;
+    width: 300px;    /* Anpassa efter ditt korts storlek */
+    height: 500px;   /* Anpassa efter ditt korts storlek opacity: 0.6; */
+    background-color: transparent;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    
+  }
+
+
+  /* Själva canvas-elementet
+  #id-card-canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+   */
+
+  #id-card-canvas {
+    display: block;
+  }
+  
+
+  /* Huvudcontainer */
+.container.passerkort-container {
+  padding: 1rem;
+}
+
+/* Rubrik */
+h1 {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Bildbeskärningscontainer */
+#crop-container {
+  margin-bottom: 1rem;
+}
+
+/* Dold originalbild */
+#originalImage {
+  max-width: 100%;
+  display: none;
+}
+
+/* Knapp för detektering */
+#detectFaceButton {
+  display: none;
+}
+
+/* ID-kort container */
+#id-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+
+/* Canvas container 
+.canvas-container {
+  position: relative;
+  width: 300px;
+  height: auto;
+}
+*/
+/* Info container */
+.info-container {
+  flex-grow: 1;
+  max-width: 700px;
+}
+
+#info-card {
+  width: 300px;
+  height: 600px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+
+.input-group input[type="text"],input[type="number"], input[type="date"] {
+  width: auto;
+  padding: 0.4rem;
+  box-sizing: border-box;
+  margin-bottom: 0;
+}
+
+.input-group .btn {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  height: calc(100%); /* Följer inputfältets höjd */
+}
+
+
+/* Styrknappar */
+button {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+button:last-child {
+  margin-right: 0;
+}
+
+/* Ålder och kön-ruta */
+.alder-kon-container {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #666;
+}
+
+/* Upload-sektion */
+.upload-section {
+  margin-top: 1rem;
+}

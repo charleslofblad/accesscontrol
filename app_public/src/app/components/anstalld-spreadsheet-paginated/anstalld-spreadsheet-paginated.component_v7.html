@@ -1,0 +1,51 @@
+
+<input type="text" id="searchField" (input)="searchTable($event)" placeholder="Sök..." />
+<button (click)="laggTillNyAnstalld()">➕ Lägg till ny anställd</button>
+
+
+<div class="pagination-controls">
+    <button (click)="tillbaka()" [disabled]="skip === 0">⬅️ Föregående</button>
+    <button (click)="nasta()">➡️ Nästa</button>    
+</div>
+
+
+
+
+
+
+<div #handsontableContainer class="handsontable-container"></div>
+
+
+
+<!--
+<div class="toolbar">
+  <input
+    type="text"
+    id="searchField"
+    (input)="searchTable($event)"
+    placeholder="🔍 Sök anställd..."
+    class="search-input"
+    aria-label="Sök anställd"
+  />
+
+  <button (click)="laggTillNyAnstalld()" class="btn btn-primary">
+    ➕ Lägg till ny anställd
+  </button>
+</div>
+
+<div class="pagination-controls">
+  <button (click)="tillbaka()" [disabled]="skip === 0" class="btn btn-secondary">
+    ⬅️ Föregående
+  </button>
+
+  <span class="page-info">
+    Sida {{ (skip / limit) + 1 }} av {{ Math.ceil(total / limit) }}
+  </span>
+
+  <button (click)="naxta()" [disabled]="skip + limit >= total" class="btn btn-secondary">
+    Nästa ➡️
+  </button>
+</div>
+
+<div #handsontableContainer class="handsontable-container"></div>
+-->

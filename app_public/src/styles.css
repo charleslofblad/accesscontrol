@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    padding-top: 70px; /* justera efter din navbars höjd */
+  }
+
+
+  .navbar {
+    background-color: white !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* valfritt: ger en liten skugga */
+    z-index: 1000; /* ser till att den ligger ovanpå annat */
+  }
+  
