@@ -27,9 +27,11 @@ package-lock.json
 
 # === Angular frontend (app_public) ===
 app_public/node_modules/
+app_public/public/images_01/
 app_public/dist/
 app_public/.angular/cache/
 app_public/.vscode/
+
 
 # Build artifacts
 dist/
