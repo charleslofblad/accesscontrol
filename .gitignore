@@ -48,6 +48,9 @@ bazel-out/
 *.sublime-workspace
 .history/
 
+# === data - mongodb ===
+data/
+
 # Misc
 .DS_Store
 Thumbs.db
