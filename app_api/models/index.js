@@ -1,4 +1,8 @@
-const Anstalld = require('./Anstalld');
-const Layout   = require('./Layout');  // om du har en separat Layout.js
 
-module.exports = { Anstalld, Layout };
+
+// app_api/models/index.js
+const Anstalld = require('./Anstalld');
+const Layout = require('./Layout');
+const Counter = require('./Counter');
+
+module.exports = { Anstalld, Layout, Counter };

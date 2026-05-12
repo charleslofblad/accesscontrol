@@ -1,0 +1,80 @@
+<!-- 🔍 Sökfält -->
+<div class="search-bar mb-3">
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Sök efter namn, ID eller nummer..."
+    [(ngModel)]="searchTerm"
+    (keyup.enter)="onSearch()"  
+  />
+  <button class="btn btn-primary mt-2" (click)="onSearch()">Sök</button>
+</div>
+
+<!-- Lista -->
+<div class="card-list">
+  <div
+    class="card-item"
+    *ngFor="let person of anstallda"
+    [class.selected]="person._id === selectedId"
+  >
+    <h3>
+      <a
+        [routerLink]="['/card-detail', person._id]"
+        [queryParams]="{ skip: skip, limit: limit }"
+      >
+        {{ person.Fornamn }} {{ person.Efternamn }}
+      </a>
+    </h3>
+    <p><strong>Roll:</strong> {{ person.Roll }}</p>
+    <p><strong>Organisation:</strong> {{ person.Layout }}</p>
+    <p><strong>Företag:</strong> {{ person.Foretag || 'Ej angivet' }}</p>
+    <p><strong>ID:</strong> {{ person.Anstallda_ID }}</p>
+
+    <div *ngIf="person.BildURL">
+      <img
+        [src]="person.BildURL"
+        alt="{{ person.FulltNamn }}"
+        class="profile-img"
+      />
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap Pagination -->
+<nav aria-label="Page navigation" class="mt-3">
+  <ul class="pagination justify-content-center">
+    <!-- Föregående -->
+    <li class="page-item" [class.disabled]="currentPage === 1">
+      <a
+        class="page-link"
+        (click)="goToPage(currentPage - 1)"
+        href="javascript:void(0)"
+        >Föregående</a
+      >
+    </li>
+
+    <!-- Sidnummer -->
+    <li
+      class="page-item"
+      *ngFor="let page of pagesArray()"
+      [class.active]="page === currentPage"
+    >
+      <a
+        class="page-link"
+        (click)="goToPage(page)"
+        href="javascript:void(0)"
+        >{{ page }}</a
+      >
+    </li>
+
+    <!-- Nästa -->
+    <li class="page-item" [class.disabled]="currentPage === totalPages">
+      <a
+        class="page-link"
+        (click)="goToPage(currentPage + 1)"
+        href="javascript:void(0)"
+        >Nästa</a
+      >
+    </li>
+  </ul>
+</nav>

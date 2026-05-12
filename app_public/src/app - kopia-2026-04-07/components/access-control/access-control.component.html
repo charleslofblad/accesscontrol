@@ -1,0 +1,14 @@
+<p>access-control works!</p>
+<video #video autoplay muted width="400"></video>
+
+<div style="margin-top:10px;">
+  <input [(ngModel)]="mifareInput" placeholder="Mifare kod" />
+  <button (click)="onCardScanned()">Scan kort</button>
+</div>
+
+<div *ngIf="currentEmployee">
+  <h3>{{ currentEmployee.FulltNamn }}</h3>
+  <p>{{ currentEmployee.Roll }}</p>
+</div>
+
+<h2>{{ accessStatus }}</h2>

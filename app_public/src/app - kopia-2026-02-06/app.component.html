@@ -1,0 +1,87 @@
+<!--
+<nav class="navbar fixed-top navbar-expand-md navbar-light">
+  <div class="container">
+    <a routerLink="">Start</a>
+
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a routerLink="passerkort" routerLinkActive="active">Passerkort</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="card-editor" routerLinkActive="active">Card editor</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="anstalld-spreadsheet" routerLinkActive="active">Anställd Spreadsheet</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+-->
+
+<nav class="navbar fixed-top navbar-expand-md navbar-light">
+  <div class="container">
+    <a routerLink="" class="navbar-brand">Passerkorts och Behörighetshantering</a>
+    <button type="button" data-toggle="collapse" data-target="#navbarMain" class="navbar-toggler">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbarMain" class="navbar-collapse collapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a routerLink="passerkort" routerLinkActive="active" class="nav-link">Passerkort</a>
+        </li>
+
+        <li class="nav-item">
+          <a routerLink="card-editor" routerLinkActive="active" class="nav-link">Card editor</a>
+        
+        </li>
+
+        <li class="nav-item">
+          <a routerLink="card-list" routerLinkActive="active" class="nav-link">Card list</a>
+        
+        </li>
+
+           <li class="nav-item">
+          <a routerLink="file-converter" routerLinkActive="active" class="nav-link">Exportera till AssaArx</a>
+        </li>
+
+
+
+        <li class="nav-item">
+          <a routerLink="anstalld-spreadsheet-paginated" routerLinkActive="active" class="nav-link">Anställd Spreadsheet Paginated</a>
+        </li>
+      </ul>
+      <!--
+      <ul class="navbar-nav justify-content-end">
+        <li class="nav-item" routerLinkActive="active">
+          <a routerLink="login" class="nav-link" *ngIf="!isLoggedIn()"> Sign in <i class='fas fa-sign-in-alt' style='font-size:24px'></i></a>
+         
+        </li>
+        <li class="nav-item dropdown" routerLinkActive="active" *ngIf="isLoggedIn()">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown">
+            {{ getUsername() }}  
+          </a>
+       <i class='fas fa-sign-out-alt' style='font-size:24px'></i> 
+
+     
+          <div class="dropdown-menu">
+            <a class="dropdown-item" (click)="doLogout()">Logout</a>
+         
+          </div>
+        </li>
+      </ul> -->
+    </div>
+  </div>
+</nav>
+
+<div class="container content">
+  <!-- Här byts det som matchar routingen -->
+  <router-outlet></router-outlet>
+
+  <footer>
+    <div class="row">
+      <div class="col-12">
+        <small>SJ AB - - charles.lofblas&#64;sj.se</small>
+      </div>
+    </div>
+  </footer>
+</div>

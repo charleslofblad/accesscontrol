@@ -1,0 +1,17 @@
+
+<h2></h2>
+<h2></h2>
+
+<h2>Exportera till AssaArx</h2>
+
+<!-- Excel till XML -->
+<form (submit)="convertExcelToXml($event)">
+  <input type="file" (change)="onFileSelected($event, 'excel')" accept=".xlsx,.xls">
+  <button type="submit" [disabled]="!excelFile">Konvertera Excel → XML</button>
+</form>
+
+<!-- XML till Excel -->
+<form (submit)="convertXmlToExcel($event)">
+  <input type="file" (change)="onFileSelected($event, 'xml')" accept=".xml">
+  <button type="submit" [disabled]="!xmlFile">Konvertera XML → Excel</button>
+</form>

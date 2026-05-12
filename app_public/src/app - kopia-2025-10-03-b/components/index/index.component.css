@@ -1,0 +1,186 @@
+:root {
+  --background: 210 20% 98%;
+  --foreground: 215 25% 15%;
+  --card: 0 0% 100%;
+  --card-foreground: 215 25% 15%;
+  --gradient-card: linear-gradient(
+    145deg,
+    hsl(0 0% 100% / 0.9),
+    hsl(210 15% 98%)
+  );
+  --radius: 0.75rem;
+  --shadow-soft: 0 2px 8px hsl(215 25% 15% / 0.05);
+
+  --primary: 220 85% 60%;
+  --info: 200 80% 55%;
+  --success: 145 65% 45%;
+  --warning: 35 90% 55%;
+  --danger: 0 75% 55%;
+  --neutral: 215 20% 60%;
+}
+
+.page-container {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  padding: 24px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  position: relative;
+  background: var(--gradient-card);
+  color: hsl(var(--card-foreground));
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6px;
+  width: 100%;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px hsl(215 25% 15% / 0.15);
+}
+
+/* Färgkodade toppband */
+.card--primary::before {
+  background-color: hsl(var(--primary));
+}
+.card--info::before {
+  background-color: hsl(var(--info));
+}
+.card--success::before {
+  background-color: hsl(var(--success));
+}
+.card--warning::before {
+  background-color: hsl(var(--warning));
+}
+.card--danger::before {
+  background-color: hsl(var(--danger));
+}
+.card--neutral::before {
+  background-color: hsl(var(--neutral));
+}
+
+.card h2 {
+  margin: 0 0 8px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: hsl(var(--foreground) / 0.7);
+}
+
+.card-value {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.card-sub {
+  margin: 4px 0 0;
+  font-size: 0.85rem;
+  color: hsl(var(--foreground) / 0.6);
+}
+
+.success {
+  color: hsl(var(--success));
+}
+.warning {
+  color: hsl(var(--warning));
+}
+.danger {
+  color: hsl(var(--danger));
+}
+
+/* Grid för Aktivitet & Försenade Nycklar */
+.activity-overdue-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  .activity-overdue-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Card-styling för de två rutorna */
+.activity-overdue-grid .card {
+  background: hsl(var(--card));
+  color: hsl(var(--card-foreground));
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.activity-overdue-grid .card-header {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.activity-overdue-grid .card-header.text-warning {
+  color: hsl(var(--warning));
+}
+
+/* Innehåll */
+.activity-overdue-grid .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.activity-item {
+  padding: 0.5rem;
+  border-left: 4px solid hsl(var(--foreground) / 0.15);
+  background: hsl(0 0% 98%);
+  border-radius: 0.25rem;
+}
+
+.overdue-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border-left: 4px solid hsl(var(--warning));
+  background: hsl(var(--warning) / 0.1);
+  border-radius: 0.25rem;
+}
+
+button.btn-outline-sm-warning {
+  background: transparent;
+  border: 1p
+}
