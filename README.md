@@ -366,6 +366,15 @@ curl http://localhost:8000/api/anstallda/sok/Andersson
 
 ## Links
 
+TensorFlow
+https://www.tensorflow.org
+
+An end-to-end open source machine learning platform for everyone. Discover TensorFlow's flexible ecosystem of tools, libraries and community resources.
+
+---
+
 [https://doc.nexusgroup.com/pub/set-up-integration-with-rco-r-card-m5-admin-api](https://doc.nexusgroup.com/pub/set-up-integration-with-rco-r-card-m5-admin-api)
 
 ---
+
+
