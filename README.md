@@ -41,15 +41,10 @@ The system is designed to function as a framework where every step — from issu
 
 ---
 
-## Minimum Viable Product (MVP)
+## 
 
-In product development and startups, an MVP is a version of a product with just enough features to meet the basic needs of early users and to collect feedback for further development.
 
-Instead of building a fully featured product from the start, the focus is on quickly launching a version with core functionality to validate the idea and learn from user feedback.
-
----
-
-## MVP Features
+## Minimum Viable Product (MVP) Features 
 
 ### Index
 
