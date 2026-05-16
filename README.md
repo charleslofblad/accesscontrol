@@ -43,6 +43,132 @@ The system is designed to function as a framework where every step — from issu
 
 ## 
 
+# Adaptive Biometric Access Verification
+
+AccessControl includes an adaptive **RFID + facial recognition verification engine** that continuously learns and improves identity confidence over time.
+
+The workflow:
+
+### 1. MIFARE card scan
+
+When a user presents a MIFARE access card, the system retrieves the employee identity from the backend.
+
+```text
+Card → Employee Lookup → Verification Session
+```
+
+---
+
+### 2. Live facial verification
+
+The connected camera performs real-time face detection using
+face-api.js
+running on
+TensorFlow.
+
+A face descriptor is extracted and compared against the employee’s stored biometric profile.
+
+---
+
+### 3. Mean-descriptor adaptive learning
+
+Instead of relying on a single static face template, AccessControl builds a **mean facial descriptor model** based on multiple successful scans.
+
+This allows the system to gradually adapt to:
+
+* Lighting changes
+* Facial hair changes
+* Aging
+* Glasses / accessories
+* Minor pose variations
+
+The model improves automatically as legitimate users authenticate.
+
+---
+
+### 4. Confidence-based decision engine
+
+The system evaluates Euclidean distance thresholds:
+
+**High confidence**
+
+```text
+distance < 0.42
+```
+
+→ Access Granted
+
+**Medium confidence**
+
+```text
+0.42 – 0.50
+```
+
+→ Retry / Uncertain match
+
+**Low confidence**
+
+```text
+distance > 0.50
+```
+
+→ Access Denied
+
+---
+
+### 5. Anti-card-sharing protection
+
+If a valid MIFARE card is presented by another person:
+
+* RFID identity lookup succeeds
+* facial verification fails
+* physical access is denied
+
+This prevents:
+
+* borrowed cards
+* shared credentials
+* unauthorized impersonation
+
+---
+
+### 6. Cardless recovery access
+
+If a trusted employee forgets their card, facial verification can still confirm identity and allow controlled entry (configurable policy).
+
+---
+
+## Technical Implementation
+
+Implemented in Angular using:
+
+* Real-time webcam stream processing
+* Browser-side neural inference
+* Continuous descriptor averaging
+* MongoDB persistence of learned biometric descriptors
+* Server-side employee identity linkage via MIFARE lookup
+
+Core component:
+
+```text
+app_public/src/app/components/access-control/access-control.component.ts
+```
+
+---
+
+## Security Design Philosophy
+
+Traditional access systems verify **what you have**
+(card/token)
+
+AccessControl verifies both:
+
+* **What you have** (MIFARE credential)
+* **Who you are** (adaptive biometric verification)
+
+This significantly increases physical security assurance while preserving a frictionless user experience.
+
+---
 
 ## Minimum Viable Product (MVP) Features 
 
