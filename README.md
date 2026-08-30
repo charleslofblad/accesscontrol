@@ -1,6 +1,11 @@
 # AccessControl
 
 AccessControl is a digital tool designed to support and streamline the process/lifecycle of **identity and access management**, and serves as an initial step toward cloud-based development of access control systems.
+
+At SJ, I initiated The Authorization Journey @ SJ (Behörighetsresan@SJ)—a business-driven initiative to analyze, structure, and improve the entire lifecycle of identity and access management.
+
+This approach reflects modern digital development by combining business analysis, process design, and iterative product development to create solutions that can integrate with cloud-based platforms, identity and access management (IAM), and future automated workflows.
+
 <img width="2092" height="1218" alt="Behörighetsresan@SJ_02" src="https://github.com/user-attachments/assets/d5e9e4ac-ce37-4496-bc1e-31e245f1ce5c" />
 
 ## Machine Learning & Image Processing
