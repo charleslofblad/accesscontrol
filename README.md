@@ -1,6 +1,7 @@
 # AccessControl
 
 AccessControl is a digital tool designed to support and streamline the process/lifecycle of **identity and access management**, and serves as an initial step toward cloud-based development of access control systems.
+<img width="2092" height="1218" alt="Behörighetsresan@SJ_02" src="https://github.com/user-attachments/assets/d5e9e4ac-ce37-4496-bc1e-31e245f1ce5c" />
 
 ## Machine Learning & Image Processing
 
