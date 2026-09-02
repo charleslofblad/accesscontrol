@@ -1,6 +1,8 @@
 # AccessControl
 
-AccessControl is a digital tool designed to support and streamline the process/lifecycle of **identity and access management**, and serves as an initial step toward cloud-based development of access control systems.
+AccessControll is a first-generation Identity & Access Governance (IAG) platform designed to digitalize the entire identity lifecycle across people, organizational structures, roles, and physical access control. The solution is built as a Minimum Viable Product (MVP) with a technical architecture that is already prepared for JWT-based authentication, Role-Based Access Control (RBAC), and future identity federation.
+
+The long-term identity foundation is based on Microsoft Entra ID, which serves as the authoritative identity source for users, organizations, and roles. AccessControll is designed to act as the governance layer between Entra ID and downstream systems, enabling controlled provisioning, lifecycle management, auditability, and integration with both physical access systems (such as ASSA ARX and RCO) and future digital applications.
 
 At SJ, I initiated The Authorization Journey @ SJ (Behörighetsresan@SJ)—a business-driven initiative to analyze, structure, and improve the entire lifecycle of identity and access management.
 
