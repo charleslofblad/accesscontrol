@@ -1,12 +1,44 @@
 # AccessControl
 
-AccessControll is a first-generation Identity & Access Governance (IAG) platform designed to digitalize the entire identity lifecycle across people, organizational structures, roles, and physical access control. The solution is built as a Minimum Viable Product (MVP) with a technical architecture that is already prepared for JWT-based authentication, Role-Based Access Control (RBAC), and future identity federation.
+### An Identity & Access Governance MVP based on The Mandate Model
 
-The long-term identity foundation is based on Microsoft Entra ID, which serves as the authoritative identity source for users, organizations, and roles. AccessControll is designed to act as the governance layer between Entra ID and downstream systems, enabling controlled provisioning, lifecycle management, auditability, and integration with both physical access systems (such as ASSA ARX and RCO) and future digital applications.
+> AccessControl is an Identity & Access Governance (IAG) MVP that demonstrates how physical access, digital permissions, and AI-assisted verification can be governed through one unified authorization model.
 
-At SJ, I initiated The Authorization Journey @ SJ (Behörighetsresan@SJ)—a business-driven initiative to analyze, structure, and improve the entire lifecycle of identity and access management.
+The project originated from real enterprise access-governance work at SJ, where the challenge was not simply to manage access cards or system permissions, but to understand the entire lifecycle of identification and authorization across HR, Facilities, Security, and IT.
 
-This approach reflects modern digital development by combining business analysis, process design, and iterative product development to create solutions that can integrate with cloud-based platforms, identity and access management (IAM), and future automated workflows.
+That work led to two connected ideas:
+
+* Behörighetsresan@SJ (The Authorization Journey @ SJ) – a business-driven governance model for the complete lifecycle of identity and access.
+
+* The Mandate Model – a generalized authorization framework that explains how authority is issued, delegated, governed, audited, and revoked for both human and non-human identities.
+
+## Vision
+
+AccessControl is designed as the practical implementation of these governance principles.
+
+Rather than treating physical access, digital permissions, and identity management as separate systems, AccessControl treats them as different outputs of the same governance process.
+
+The long-term architecture uses Microsoft Entra ID as the authoritative identity source for users, organizations, and roles. AccessControl acts as the governance layer between Entra ID and downstream systems, enabling controlled provisioning, lifecycle management, auditability, and integration with physical access systems such as ASSA ARX and RCO, while providing a foundation for future digital applications and AI-driven workflows.
+
+## Core Governance Model
+
+AccessControl is built around a simple sequence of reusable governance primitives.
+
+Identity Authority - Identity - Role - Mandate - Policy - Permission - Access - Audit - Revocation
+
+This model separates organizational responsibility from technical implementation, making physical access, digital authorization, temporary assignments, and AI identities governable through the same conceptual language.
+
+## Why this project is different
+
+Most access-control systems start with doors.
+
+AccessControl starts with governance.
+
+Instead of asking "How do we open this door?", it asks:
+
+> Who should receive authority, why, for how long, under which policy, and how should that decision be auditable throughout its entire lifecycle?
+
+That shift—from technology-first to governance-first—is the foundation of both Behörighetsresan@SJ and The Mandate Model.
 
 <img width="2092" height="1218" alt="Behörighetsresan@SJ_02" src="https://github.com/user-attachments/assets/d5e9e4ac-ce37-4496-bc1e-31e245f1ce5c" />
 
