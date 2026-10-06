@@ -96,6 +96,7 @@ Revocation
   ↓
 Leave
 ```
+<img width="1280" height="720" alt="Behörighetsresan@SJ" src="https://github.com/user-attachments/assets/cf220782-f706-4f23-99a7-1b501fc443a8" />
 
 The same organizational journey can produce different technical outcomes:
 
