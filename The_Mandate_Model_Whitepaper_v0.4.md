@@ -1,5 +1,3 @@
-Absolut. Jag skulle göra README:n mer **GitHub-anpassad** än whitepaperet: behålla den berättande kärnan, men göra den skanningsbar med tydliga rubriker, diagram, tabeller och länkar. Här är en färdig version som du kan klistra in direkt i `README.md`.
-
 # The Mandate Model
 
 ### From Behörighetsresan@SJ to a Unified Identity Governance Framework
