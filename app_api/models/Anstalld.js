@@ -14,6 +14,14 @@ const TjanstekortSchema = new mongoose.Schema({
 
 const AnstalldSchema = new mongoose.Schema({
   Anstallda_ID: { type: Number, unique: true },
+
+  entraObjectId: {
+    type: String,
+    unique: true,
+    sparse: true,
+    index: true
+  },
+
   Fullt_namn: String,
   Efternamn: String,
   Fornamn: String,
@@ -23,15 +31,15 @@ const AnstalldSchema = new mongoose.Schema({
   Layout: String,
   Foretag: String,
   Reff_Pnr: String,
-// ny
+
   faceDescriptors: {
-  type: [[Number]], // Array av arrayer (Float32Array → number[])
-  default: []
-},
-// NY END
+    type: [[Number]], // Array av arrayer (Float32Array → number[])
+    default: []
+  },
+
 
   Tjanstekort: { type: TjanstekortSchema, default: {} }
-}, { timestamps: true });
+  }, { timestamps: true });
 
 // Pre-save counter hook
 AnstalldSchema.pre('save', async function (next) {

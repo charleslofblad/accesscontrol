@@ -9,6 +9,11 @@ const path = require('path');
 const errorHandler = require('./app_api/middleware/errorHandler');
 const exportRoutes = require('./app_api/routes/exportRoutes'); // behåll din exportRoutes
 const anstalldaRoutes = require('./app_api/routes/anstalldaRoutes');
+const identityRoutes = require('./app_api/routes/identityRoutes');
+const roleRoutes = require('./app_api/routes/roleRoutes');
+const mandateRoutes = require('./app_api/routes/mandateRoutes');
+const policyRoutes = require('./app_api/routes/policyRoutes');
+const permissionRoutes = require('./app_api/routes/permissionRoutes');
 const filesRoutes = require('./app_api/routes/files');
 
 // Init app
@@ -34,6 +39,11 @@ app.use('/uploads', express.static(path.join(__dirname, 'public/uploads')));
 app.use('/api/export', exportRoutes);
 app.use('/api/files', filesRoutes);
 app.use('/api/anstallda', anstalldaRoutes);
+app.use('/api/identities', identityRoutes);
+app.use('/api/mandates', mandateRoutes);
+app.use('/api/roles', roleRoutes);
+app.use('/api/policies', policyRoutes);
+app.use('/api/permissions', permissionRoutes);
 
 // Healthcheck (handy)
 app.get('/health', (req, res) => res.json({ status: 'ok' }));
