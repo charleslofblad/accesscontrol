@@ -2,6 +2,7 @@
   export interface Anstalld {
     _id?: string; // ✅ Lägg till denna rad
     Anstallda_ID?: number;
+    entraObjectId?: string;
     FulltNamn?: string;  // Matchar "Fullt namn"
     Fornamn: string;
     Efternamn: string;

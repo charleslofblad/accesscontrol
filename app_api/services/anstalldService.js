@@ -71,6 +71,7 @@ exports.update = async (id, payload) => {
 };
 */
 
+
 // nya versionen
 exports.update = async (id, payload) => {
   try {
@@ -85,11 +86,16 @@ exports.update = async (id, payload) => {
       delete updateData.Tjanstekort;
     }
 
+
+    console.log('📥 Update payload:', payload);
+    console.log('📤 Update data:', updateData);
     const updated = await Anstalld.findByIdAndUpdate(
       id,
       { $set: updateData },
       { new: true }
     );
+
+    console.log('📤 Updated document:', updated);
 
     if (!updated) {
       throw Object.assign(new Error('Anställd ej hittad'), { status: 404 });
