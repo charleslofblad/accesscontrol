@@ -1,3 +1,5 @@
+<img width="1055" height="1491" alt="Omslag – The Mandate Model_02" src="https://github.com/user-attachments/assets/1647202f-4290-47f3-b1d5-0ca7857abeaf" />
+
 # The Mandate Model
 
 ### From Behörighetsresan@SJ to a Unified Identity Governance Framework
