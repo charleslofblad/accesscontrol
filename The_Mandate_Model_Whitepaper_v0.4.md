@@ -30,6 +30,7 @@ The deeper question became:
 The Mandate Model addresses this question through a conceptual information model centered on the Mandate: a representation of governed authority, its origin, purpose, scope, conditions, delegation and lifecycle.
 
 Together, Behörighetsresan and The Mandate Model establish the conceptual foundation for an **Authority Governance Layer**.
+<img width="2092" height="1218" alt="Behörighetsresan@SJ_02" src="https://github.com/user-attachments/assets/169c87d7-7481-40e5-8a4d-72a4b0fa172a" />
 
 ---
 
